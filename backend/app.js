@@ -59,9 +59,15 @@ app.post("/api/users", async (req, res) => {
 
   //*I could use  const newUser = new User({}) and .save(newUser), but I prefer to use insertMany, in this case performance difference is negligible.
 
-  let user = await User.insertMany(userData);
+  //validation
 
-  res.json(user);
+  if (userData.name || +userData.age || userData.email || userData.password) {
+    let user = await User.insertMany(userData);
+
+    res.json(user);
+  } else {
+    res.status(400).send({ error: "Wrong data submitted, check it." });
+  }
 });
 
 //!PUT (Update)
