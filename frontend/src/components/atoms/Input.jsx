@@ -3,12 +3,12 @@ import { FormContext } from "../organisms/Form";
 
 const Input = ({ id, text, disabled, type, stateName }) => {
   const context = useContext(FormContext);
-  const { formState, formDispatch } = context;
+  const { formDispatch } = context;
   const inputRef = useRef();
   //   console.log(type, stateName);
   return (
     <>
-      <label htmlFor={id}>{text}</label>
+      <label htmlFor={id}>{type === "submit" ? "" : text}</label>
       <input
         type={type}
         id={id}

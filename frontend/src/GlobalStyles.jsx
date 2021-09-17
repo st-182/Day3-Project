@@ -37,10 +37,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: rgb(255, 255, 255);
   background-color: #ff7700;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cd3535' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa1515' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d41931' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ac2934' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d90d4c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ae133e' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d32c72' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ab1959' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4298f' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0471' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a816a8' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23872887' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
- 
 }
 
 #root {
@@ -126,13 +126,14 @@ footer {
 
 button, input[type=submit] {
   border-radius: 10px;
-  width: 70px;
-  height: 70px;
-  background: transparent;
+  width: 100px;
+  height: 30px;
+  background: #ffffff2c;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border-color: rebeccapurple;
+    border:1px solid #fb8d17;
+  
   margin: 0 auto;
 }
 
@@ -141,12 +142,7 @@ button:hover, input[type=submit]:hover {
 }
 
 button:active, input[type=submit]:active {
-  font-size: 1.7rem;
-  border: 10px solid rgba(102, 51, 153, 0.75);
-  transition: 0s;
-  text-shadow: 2px 2px 20px rgb(0, 0, 0);
-  backdrop-filter: blur(15px);
-  /* background-color: rgba(255, 255, 255, 0.2); */
+  
 }
 form{
   display: grid;

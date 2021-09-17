@@ -7,16 +7,11 @@ import { ShowAllUpdatedUsersContext } from "../../screens/HomeScreen";
 const StyledForm = styled.form`
   width: 800px;
   margin: 0 auto;
-  background-color: gray;
+  background-color: #80808060;
   padding: 10px;
   display: grid;
   grid-column: 1fr 1fr;
-  select {
-    background: transparent;
-    option {
-      background: transparent;
-    }
-  }
+  gap: 10px;
 `;
 const initialState = {
   name: "",
@@ -66,6 +61,7 @@ const Form = () => {
   return (
     <>
       <FormContext.Provider value={{ formState, formDispatch }}>
+        <h3>Registracija</h3>
         <StyledForm onSubmit={handlerSubmit} ref={formRef}>
           <InputGroup
             data={[

@@ -5,12 +5,13 @@ import styled from "styled-components";
 const StyledGridDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 `;
 
 const ShowAllUsers = ({ allUsers }) => {
   return (
     <>
-      <h2>Vartotojai:</h2>
+      <h3>Vartotojai:</h3>
       <StyledGridDiv>
         {allUsers.map((user) => (
           <UserProfile

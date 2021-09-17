@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 
 //importing mongoose models with schemas
-import User from "./models/userModel.js";
+import User from "./models/UserModel.js";
 
 const app = express();
 

@@ -1,5 +1,25 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
+import styled from "styled-components";
+
+const StyledUserProfile = styled.div`
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.5);
+  p,
+  input {
+    padding: 5px;
+  }
+  input {
+    width: 80%;
+    margin: 1px auto;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  button {
+    margin: 10px;
+  }
+`;
 
 const UserProfile = ({ id, name, age, email, password }) => {
   const userProfileRef = useRef();
@@ -36,7 +56,7 @@ const UserProfile = ({ id, name, age, email, password }) => {
       );
   };
   return (
-    <div ref={userProfileRef}>
+    <StyledUserProfile ref={userProfileRef}>
       {updateProfile === false ? (
         <p>{userName}</p>
       ) : (
@@ -81,7 +101,7 @@ const UserProfile = ({ id, name, age, email, password }) => {
       <button onClick={() => deleteUserHandler()}>Ištrinti</button>
       {/* <p>{updateProfile ? "true" : "false"}</p>
       <p>{id}</p> */}
-    </div>
+    </StyledUserProfile>
   );
 };
 
