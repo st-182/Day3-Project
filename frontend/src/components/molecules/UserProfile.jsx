@@ -71,8 +71,8 @@ const UserProfile = ({ id, name, age, email, password }) => {
       ) : (
         <input
           value={userAge}
-          onChange={(e) => setUserAge(e.target.value)}
-          type="text"
+          onChange={(e) => setUserAge(+e.target.value)}
+          type="number"
         />
       )}
       {updateProfile === false ? (

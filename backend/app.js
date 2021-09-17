@@ -61,7 +61,7 @@ app.post("/api/users", async (req, res) => {
 
   //validation
 
-  if (userData.name || +userData.age || userData.email || userData.password) {
+  if (userData.name && +userData.age && userData.email && userData.password) {
     let user = await User.insertMany(userData);
 
     res.json(user);
@@ -76,9 +76,13 @@ app.put("/api/users/:id", async (req, res) => {
   let userId = req.params.id;
   let userData = req.body;
 
-  let user = await User.findByIdAndUpdate(userId, userData);
+  if (userData.name && +userData.age && userData.email && userData.password) {
+    let user = await User.findByIdAndUpdate(userId, userData);
 
-  res.json(user);
+    res.json(user);
+  } else {
+    res.status(400).send({ error: "Wrong data submitted, check it." });
+  }
 });
 
 //!DELETE
