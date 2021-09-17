@@ -3,20 +3,20 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <div>LOGO</div>
+      <div>Logotipas</div>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="#">Pagrindinis</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="#about">Apie mus</a>
           </li>
           <li>
-            <a href="/contacts">Contacts</a>
+            <a href="#contacts">Kontaktai</a>
           </li>
           <li>
-            <a href="/logIn-signUp">Log In</a>
+            <a href="#logIn-signUp">Prisijungti</a>
           </li>
         </ul>
       </nav>
